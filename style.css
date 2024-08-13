@@ -110,7 +110,7 @@ ul#menu li a {
 ul#menu li a:hover, ul#menu li a.active {
 	background-color: rgba(112, 142, 104, 0.535);
 	backdrop-filter: blur(5px);	
-	background : url("images/PointerPOinted.gif") 0 0;	
+	background : url("images/PointerPointed.gif") 0 0;	
 	-webkit-backdrop-filter: blur(5px);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);	
 	color: #fff;
