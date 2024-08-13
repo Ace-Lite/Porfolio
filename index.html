@@ -1,45 +1,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-    <title>Skydusk Porfolio</title>
-    <meta http-equiv="Content-Language" content="English" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <head>
+        <title>Skydusk Porfolio</title>
+        <meta http-equiv="Content-Language" content="English" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="scripts/initial.js"></script>
-</head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="scripts/initial.js"></script>
+    </head>
 
 
-<body>
-    <div id="wrap">
+    <body>
+        <div id="wrap">
 
-    <div class="sideBar">
-        <div id="banner">
-            <img src="images/placeholderlogo.png" id ="logo" onclick="ChangeSwitch(0)">>
+        <div class="sideBar">
+            <div id="banner"><img src="images/placeholderlogo.png" id ="logo" onclick="ChangeSwitch(0)"></div>
+            <nav> <ul id="menu"> <script src="scripts/menu.js"> </script> </ul> </nav>
+
+
+            <img id = "cornerImage" src = "images/cornergraphic.png">
         </div>
 
-        <nav> <ul id="menu"> <script src="scripts/menu.js"> </script> </ul> </nav>
-        <img id = "cornerImage" src = "images/cornergraphic.png">
-    </div>
+        <div id="banner2">
+            <img id = "cornerImage2" src = "images/cornergraphic2.png">
+            <div id="header"></div>
+        </div>
 
-    <div id="banner">
-        <div id="header"></div>
-    </div>
+        <div class="content">
+        
+            <div id="insertContent"></div>
+            <script> ChangeSwitch(0); // default </script>
+        
+        </div>
 
-    <div class="content">
-        <div id="insertContent"></div>
-        <script> ChangeSwitch(0); // default </script>
-    </div>
 
-    <div style="clear: both;"> </div>
 
-    <div id="footer">
-        <br /><br />
-        Projects displayed here might have been done in team or contain contributions from other people, focus therefore is mostly on my own contributions.
-    </div>
+        <div style="clear: both;"></div>
 
-</body>
-
+        <div id="footer">
+            <br /><br />
+            Projects displayed here might have been done in team or contain contributions from other people, focus therefore is mostly on my own contributions.
+        </div>
+    </body>
 </html>

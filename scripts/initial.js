@@ -30,5 +30,19 @@ function ChangeSwitch(number)
     html_switch = number;
 };
 
+
+
+document.addEventListener('scroll', function() {
+    const height_bx = Math.max(150-window.scrollY, 0)
+    const procentile = height_bx/150
+
+    $('#banner2').css('opacity', procentile);
+    $('#banner2').css('height', height_bx+"px");
+    $('#banner2').css('margin-top', (18+window.scrollY)+"px");
+
+    $('#cornerImage2').css('height', height_bx+"px");
+})
+
+
 function Update()
 {return 0};
