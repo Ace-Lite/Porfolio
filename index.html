@@ -7,41 +7,78 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
+        <meta name = "viewport"                   content = "width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name = "description"                content = "Jack of all developments"/>
+        <meta name = "keyword"                    content = "developer, portfolio, javascript, lua, c, c++, c/c++, r, python, c#, sql, artist, pixelart, design, level design, game design, modding, hobbies, scripts"/>
+
+        <meta property = "og:title"               content = "Skydusk | Developer"/>
+        <meta property = "og:description"         content = "Jack of all developments"/>
+        <meta property = "og:image"               content = "images/placeholderlogo.png"/>
+        <meta property = "og:url"                 content = "https://ace-lite.github.io/Porfolio/"/>
+        <meta property = "og:type"                content = "website"/>
+
+        <meta property = "twitter:card"           content = "summary_large_image"/>
+        <meta property = "twitter:title"          content = "Skydusk | Developer"/>
+        <meta property = "twitter:description"    content = "Jack of all developments"/>
+        <meta property = "twitter:image"          content = "images/placeholderlogo.png"/>
+
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="scripts/initial.js"></script>
+        <script src="scripts/infopanel.js"></script>        
     </head>
 
 
     <body>
         <div id="wrap">
-
         <div class="sideBar">
-            <div id="banner"><img src="images/placeholderlogo.png" id ="logo" onclick="ChangeSwitch(0)"></div>
+            <div id="banner">
+                <img src="images/placeholderlogo.png" id ="logo" draggable="false" onclick="ChangeSwitch(0)"/>                
+            </div>
             <nav> <ul id="menu"> <script src="scripts/menu.js"> </script> </ul> </nav>
 
-
-            <img id = "cornerImage" src = "images/cornergraphic.png">
+            <img id = "cornerImage" src = "images/cornergraphic.png" draggable="false">
         </div>
 
         <div id="banner2">
-            <img id = "cornerImage2" src = "images/cornergraphic2.png">
+            <img id = "cornerImage2" src = "images/cornergraphic2.png" draggable="false">
             <div id="header"></div>
             <div id="headertext">Porfolio</div>
         </div>
 
         <div class="content">
-            <div id="insertContent"></div>
-            <script> ChangeSwitch(0); // default </script>
+            <div id ="mainPanel">
+                <div id="wrapperPanel"></div>
 
-            <div style="clear: both;"></div>
+                <div id="insertContent"></div>
+                <script> ChangeSwitch(0); // default </script>
 
-            <div id="footer">
-                <br /><br />
-                Projects displayed here might have been done in team or contain contributions from other people, focus therefore is mostly on my own contributions.
-            </div>            
+                <div style="clear: both;"></div>
+            
+
+                <div id="footer">
+                    <br /><br />
+                    Projects displayed here might have been done in team or contain contributions from other people, focus therefore is mostly on my own contributions.
+                    <br /><br />
+                    Self-made with these technologies: jQuery, Javascript, CSS, XHTML
+                </div>
+            </div>
         </div>
 
 
+        <div id="infoPanel">
+            <img id = "cornerImage3" src="images/cornergraphic3.png" draggable="false"/>
+                
+            <img id="closePanel" src="images/X.png" onclick="GalleryPanel.close()"/>
+            <br />
+
+            <div id="infoPanel_Header">Header</div>
+
+            <img id="infoPanel_Image" src="images/Doom1.png"/>
+
+            <div id="infoPanel_Description">EMPTY</div>
+
+            <div id="infoPanel_Links"><img src="images/link.png"/>  Fullscreen View</div>
+        </div>
 
 
     </body>
