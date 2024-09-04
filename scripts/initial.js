@@ -1,8 +1,8 @@
 const links = [
     ["subpages/home.html",          "Home"],
-    ["subpages/updates.html",       "Updates"],    
+    ["subpages/updates.html",       "Blog"],    
+    ["subpages/artwork.html",       "Artwork"],  
     ["subpages/projects.html",      "Projects"],
-    ["subpages/artwork.html",       "Artwork"],   
     ["subpages/contacts.html",      "Contacts"],                       
 ];
 

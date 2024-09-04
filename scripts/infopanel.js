@@ -11,17 +11,25 @@ class InfoPanel {
         $('#wrapperPanel').css('opacity', '0%').css('pointer-events', 'none');
     }
 
-    switch(path_image, description)
+    switch(description, xheadertext)
     {
-        if (path_image)
+        if (xheadertext)
         {
-            $('#infoPanel_Image').prop('src', path_image);
+            $('#infoPanel_Header').text(xheadertext);
+        }
+        else
+        {
+            $('#infoPanel_Header').text("---");
         }
 
         if (description)
         {
             $('#infoPanel_Description').text(description);
         }
+        else
+        {
+            $('#infoPanel_Description').text("---");
+        }        
     }
 
     open()
@@ -37,8 +45,8 @@ class InfoPanel {
 
 const GalleryPanel = new InfoPanel;
 
-function openSwitch(path_image, description)
+function openSwitch(description, xheadertext)
 {
-    GalleryPanel.switch(path_image, description);
+    GalleryPanel.switch(description, xheadertext);
     GalleryPanel.open();
 }

@@ -242,6 +242,15 @@ ul#menu li a:active {
 	border-radius: 32px;
 	box-shadow: 3px 3px 3px #33333349;
 }
+#infoBubble_Header {
+	font-family: BebasNeue;
+	font-size: 175%;
+
+	text-align: center;
+
+	color: #61d041;
+	text-shadow: 3px 3px #61616158;
+}
 #infoBubble_Description {
 	position:relative;
 	font-family: Sarabun;
@@ -271,6 +280,30 @@ ul#menu li a:active {
 	margin-bottom: 24px;
 }
 
+#infoBubble_Tags {
+	width:auto;
+	display:flex;
+	font-family: Sarabun;
+	text-align: left;	
+	color: rgb(0, 0, 0);
+	text-shadow: 2px 2px 3px #353535;
+	font-size: 125%;
+	color:#61d041;
+	padding-top: 22px;
+	margin-left: 62px;
+}
+#infoBubble_Tag {
+	position: relative;
+	padding-left: 16px;
+	padding-right: 17px;
+
+	background-image: linear-gradient(180deg,#362630, #7b6b74b7, #8b7979);
+	border-radius: 32px;
+	box-shadow: 3px 3px 3px #33333349;	
+
+	transform: translateX(8px);
+}
+
 #infoBubble_Links {
 	width:auto;
 	cursor:pointer;
@@ -298,22 +331,38 @@ ul#menu li a:active {
 	transition: transform 0.25s;	
 }
 #infoBubble_Gallery {
-	margin-top: 24px;
+	margin-top: 48px;
+	margin-bottom: 8px;	
 	margin-left: 64px;
-	margin-right: 64px;	
+	margin-right: -12%;
+	display: flex;
+  	flex-wrap: wrap;
+	align-items: start;
+	grid-gap: 6px;
 }
-
 #infoBubble_Image {
 	cursor:pointer;
 	width: 28%;
+	height:328px;
+	object-fit: cover;
 	outline: solid 6px;
 	outline-color:#74ce35;
-	margin-top: 24px;
+}
+#infoBubble_ImageU {
+	width: 28%;
+	height:328px;	
+	object-fit: cover;
+	outline: solid 6px;
+	outline-color:#74ce35;
 }
 #infoBubble_Image:hover {
 	filter:brightness(120%) saturate(80%);
 	transform: scale(100.5%);
 	transition: transform 0.5s;
+}
+#infoBubble hr {
+	border: 80%px solid #61d041;
+	border-radius: 8px;
 }
 
 #closePanel {
@@ -346,23 +395,14 @@ ul#menu li a:active {
 
 
 #infoPanel_Description {
-	width: 40%;
 	font-family: Sarabun;	
 	text-align: left;	
 	color:#61d041;
 	text-shadow: 2px 2px 3px #353535;
 	font-size: 125%;
-	margin-left: 50%;
-	margin-top: -22.5%;
-}
 
-#infoPanel_Image {
-	width: 40%;
-	outline: solid 6px;
-	border-radius: 1%;
-	outline-color:#74ce35;
-	margin-top: 3.5%;
-	margin-left: calc(85%/2 - 7*50%/10);
+	padding-left: 5.5%;
+	padding-right: 5.5%;	
 }
 
 #infoPanel_Links {
@@ -373,7 +413,6 @@ ul#menu li a:active {
 	text-shadow: 2px 2px 3px #353535;
 	font-size: 125%;
 	margin-left: calc(85%/2 - 7*50%/10);
-	margin-top: 22.5%;
 	color:#61d041;
 }
 #infoPanel_Links img {
@@ -406,7 +445,14 @@ ul#menu li a:active {
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
-
+#infoContacts_Link {
+	position: relative;
+	padding-right: 32px;
+}
+#infoContacts_Link img {
+	transform: translateY(8px);
+	padding-right: 2px;
+}
 #textContents{
 	font-family: Sarabun;	
 
